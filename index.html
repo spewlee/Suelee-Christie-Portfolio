@@ -6,19 +6,17 @@
     <meta name="description" content="Suelee Christie's Project">
     <meta name="author" content="Suelee Christie">
     <link rel="icon" type="image/x-icon" href="images/favicon.ico">
-    <link rel="stylesheet" href="styles.css">
+    <!-- <link rel="stylesheet" href="styles.css"> -->
+    <link rel="stylesheet" href="mobile-first-css.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;900&family=Playfair+Display:ital,wght@0,800;1,400&family=Praise&display=swap" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/50d45620b6.js" crossorigin="anonymous"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/tilt.js/1.2.1/tilt.jquery.min.js"></script>
-    <script src="script.js"></script>
 </head>
 
 <body>
 
-    <div class="tablet">
+    <!-- Tablet that displays content on Tablet and Desktop -->
+    <div class="tablet" id="tablet">
         <div class="sticky" id="sticky-id">
             <header>
                 <img class="profile-photo" src="images/SueleeChristie.png" alt="Profile photo of Suelee Christie">
@@ -29,6 +27,9 @@
                     <a href="">Contact</a>
                     <a href="https://www.linkedin.com/in/sueleechristie/"><i id="linkedin" class="fa fa-linkedin-square" aria-hidden="true"></i></a>
                     <a href="https://github.com/spewlee"><i id="github" class="fa fa-github" aria-hidden="true"></i></a>
+                    <a href="javascript:void(0);" class="icon" onclick="responsiveNav()">
+                        <i class="fa fa-bars hamburger                                                                                 "></i>
+                      </a>
                 </nav>
             </header>
             <div class="wood"></div>
@@ -93,6 +94,12 @@
 </body>
 
 
-
-
+<!-- Icons from FontAwesome -->
+<script src="https://kit.fontawesome.com/50d45620b6.js" crossorigin="anonymous"></script>
+<!-- jQuery Script -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<!-- Tilt.js Script -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tilt.js/1.2.1/tilt.jquery.min.js"></script>
+<!-- My JavaScript file -->
+<script src="script.js"></script>
 </html>

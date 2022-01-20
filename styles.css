@@ -83,7 +83,7 @@ header h2 {
 
 nav {
     display:flex;
-    flex: 2;
+    flex: 1;
     padding: 0.5em;
     width: 50vw;
     justify-content: space-around;
