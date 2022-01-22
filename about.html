@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Suelee Christie's Project</title>
+    <meta name="description" content="Suelee Christie's Project">
+    <meta name="author" content="Suelee Christie">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;900&family=Playfair+Display:ital,wght@0,800;1,400&family=Praise&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- Tablet that displays content on Tablet and Desktop -->
+    <div class="tablet" id="tablet">
+
+        <!-- STICKY HEADER -->
+        <div class="sticky" id="sticky-id">
+            <header>
+                <img class="profile-photo" src="images/SueleeChristie.png" alt="Profile photo of Suelee Christie">
+                <a href="index.html" class="suelee-home" id="suelee-home">Suelee Christie</a>
+                <!-- DESKTOP NAV -->
+                <nav class="desktop-nav">
+                    <a href="about.html">About</a>
+                    <a href="projects.html">Projects</a>
+                    <a href="javascript:void(0);" class="contact-link" onclick="openForm()">Contact</a>
+                    <a href="https://www.linkedin.com/in/sueleechristie/"><i id="linkedin" class="fa fa-linkedin-square" aria-hidden="true"></i></a>
+                    <a href="https://github.com/spewlee"><i id="github" class="fa fa-github" aria-hidden="true"></i></a>
+                </nav>
+                <!-- MOBILE HAMBURGER ICON -->
+                <div class="hamburger-icon" id="mobile-nav-id">
+                    <a href="javascript:void(0);" class="icon hamburger" onclick="responsiveNav()">
+                        <i class="fa fa-bars hamburger"></i>
+                      </a>
+                </div>   
+            </header>
+            <div class="wood"></div>
+        </div>
+
+        <!-- MOBILE NAVIGATION -->
+        <div class="mobile-nav-container hide-container" id="mobile-nav-container">
+            <ul class="mobile-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="javascript:void(0);" class="contact-link" onclick="openForm()">Contact</a></li>
+                <li><a href="https://www.linkedin.com/in/sueleechristie/"><i id="linkedin" class="fa fa-linkedin-square" aria-hidden="true"></i></a></li>
+                <li><a href="https://github.com/spewlee"><i id="github" class="fa fa-github" aria-hidden="true"></i></a></li>
+            </ul>
+        </div>
+
+        <!-- MAIN CONTENT -->
+        <main>
+
+
+            <!-- POPUP FORM -->
+            <div class="form-popup hide-form" id="form-popup">
+
+                <div class="close-container">
+                    <a href="javascript:void(0);" class="icon close" onclick="closeForm()">
+                    <i class="fas fa-times close"></i>
+                    </a>
+                </div>
+
+                <h2> Contact Form</h2>
+
+                <p>If you would like to contact Suelee Christie, please complete the following form:</p>
+                
+                <form action="https://formspree.io/f/mnqwjlbg" method="POST">
+                    <div class="form-item">
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name">
+                    </div>
+                    <div class="form-item">
+                        <label for="mail">Email:</label>
+                        <input type="email" id="mail" name="email">
+                    </div>
+                    <div class="form-item">
+                        <label for="message">Message</label>
+                        <textarea type="text" id="message" name="message"></textarea>
+                    </div>
+                    <div class="form-item">
+                        <button type="submit">SEND</button>
+                    </div>
+                </form>
+            </div>
+
+
+            <h1 class="about-title">About Suelee Christie</h1>
+
+            <section class="about-1">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, architecto alias nostrum adipisci sunt vel illum numquam officiis, aperiam voluptates quidem nihil in. Qui, alias distinctio? Molestiae minus error accusantium!</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, architecto alias nostrum adipisci sunt vel illum numquam officiis, aperiam voluptates quidem nihil in. Qui, alias distinctio? Molestiae minus error accusantium!</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, architecto alias nostrum adipisci sunt vel illum numquam officiis, aperiam voluptates quidem nihil in. Qui, alias distinctio? Molestiae minus error accusantium!</p>
+            </section>
+
+        </main>
+
+        <!-- FOOTER -->
+        <footer>
+            <p>© Copyright Suelee Christie 2022</p>
+        </footer>
+
+
+    </div>
+
+
+</body>
+
+
+<!-- Icons from FontAwesome -->
+<script src="https://kit.fontawesome.com/50d45620b6.js" crossorigin="anonymous"></script>
+<!-- jQuery Script -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<!-- Tilt.js Script -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tilt.js/1.2.1/tilt.jquery.min.js"></script>
+<!-- My JavaScript file -->
+<script src="script.js"></script>
+</html>

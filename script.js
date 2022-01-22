@@ -26,7 +26,25 @@ function responsiveNav() {
     if (x.className === "mobile-nav-container") {
       x.className += " responsive";
     } else {
-      x.className = "mobile-nav-container hide-container";
-        
+      x.className = "mobile-nav-container hide-container";    
     }
   }
+
+  function openForm() {
+    var form = document.getElementById("form-popup");
+    form.classList.toggle("hide-form");
+    
+    if (form.className != "form-popup") {
+      form.className = "form-popup hide-form";    
+    }
+  }
+
+  function closeForm() {
+    var form = document.getElementById("form-popup");
+
+    if (form.className === "form-popup") {
+    form.className += " hide-form";
+    }  else {
+        form.className = "form-popup";
+    }  
+  }   

@@ -22,12 +22,12 @@
         <div class="sticky" id="sticky-id">
             <header>
                 <img class="profile-photo" src="images/SueleeChristie.png" alt="Profile photo of Suelee Christie">
-                <h2>Suelee Christie</h2>
+                <a href="index.html" class="suelee-home" id="suelee-home">Suelee Christie</a>
                 <!-- DESKTOP NAV -->
                 <nav class="desktop-nav">
-                    <a href="">About</a>
-                    <a href="">Projects</a>
-                    <a href="">Contact</a>
+                    <a href="about.html">About</a>
+                    <a href="projects.html">Projects</a>
+                    <a href="javascript:void(0);" class="contact-link" onclick="openForm()">Contact</a>
                     <a href="https://www.linkedin.com/in/sueleechristie/"><i id="linkedin" class="fa fa-linkedin-square" aria-hidden="true"></i></a>
                     <a href="https://github.com/spewlee"><i id="github" class="fa fa-github" aria-hidden="true"></i></a>
                 </nav>
@@ -44,10 +44,10 @@
         <!-- MOBILE NAVIGATION -->
         <div class="mobile-nav-container hide-container" id="mobile-nav-container">
             <ul class="mobile-menu">
-                <li><a href="">Home</a></li>
-                <li><a href="">About</a></li>
-                <li><a href="">Projects</a></li>
-                <li><a href="">Contact</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="javascript:void(0);" class="contact-link" onclick="openForm()">Contact</a></li>
                 <li><a href="https://www.linkedin.com/in/sueleechristie/"><i id="linkedin" class="fa fa-linkedin-square" aria-hidden="true"></i></a></li>
                 <li><a href="https://github.com/spewlee"><i id="github" class="fa fa-github" aria-hidden="true"></i></a></li>
             </ul>
@@ -55,6 +55,40 @@
 
         <!-- MAIN CONTENT -->
         <main>
+
+
+            <!-- POPUP FORM -->
+            <div class="form-popup hide-form" id="form-popup">
+
+                <div class="close-container">
+                    <a href="javascript:void(0);" class="icon close" onclick="closeForm()">
+                    <i class="fas fa-times close"></i>
+                    </a>
+                </div>
+
+                <h2> Contact Form</h2>
+
+                <p>If you would like to contact Suelee Christie, please complete the following form:</p>
+                
+                <form action="https://formspree.io/f/mnqwjlbg" method="POST">
+                    <div class="form-item">
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name">
+                    </div>
+                    <div class="form-item">
+                        <label for="mail">Email:</label>
+                        <input type="email" id="mail" name="email">
+                    </div>
+                    <div class="form-item">
+                        <label for="message">Message</label>
+                        <textarea type="text" id="message" name="message"></textarea>
+                    </div>
+                    <div class="form-item">
+                        <button type="submit">SEND</button>
+                    </div>
+                </form>
+            </div>
+
             <h1>Welcome to Suelee Christie's portfolio!</h1>
 
             <section class="first-section">

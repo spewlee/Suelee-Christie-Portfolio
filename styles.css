@@ -19,13 +19,19 @@ header {
     max-height: 10vh;
 }
 
-header h2 {
+#suelee-home {
+    display: block;
+    color: black;
+    text-decoration: none;
     text-align: center;
     flex:2;
     font-family: 'Praise',cursive;
     font-size: 8vw;
     padding: 1em;
-    flex: 2;
+}
+
+#suelee-home:hover {
+    color: rgb(71, 71, 71);
 }
 
 ul {
@@ -216,6 +222,108 @@ li:hover{
 }
 /* END OF CLASSES */
 
+/* POP UP FORM */
+.hide-form {
+    display: none;
+}
+
+.form-popup {
+    margin: 2em;
+    z-index: 4;
+    padding: 2em;
+    background: linear-gradient(to left top, rgba(255,255,255,0.5), rgba(255,255,255,0));
+    border-radius: 1em;
+    box-shadow: 0 4px 5px rgba(8, 8, 8, 0.493);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.78);
+}
+
+.close-container {
+    position: absolute;
+    top:0;
+    right: 0;
+    padding: 0.5em;
+    padding-right: 1em;
+    display: block;
+    font-size: 2em;
+}
+
+.close-container i {
+    color: grey;
+}
+
+.close-container i:hover {
+    color: black;
+}
+
+form {
+    margin: 1em;
+    width: 100%;
+}
+
+.form-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1em;
+}
+
+.form-item label {
+    flex-basis: 25%;
+    font-size: 1.5em;
+}
+
+.form-item input,
+.form-item textarea {
+    flex-basis: 50%;
+    border: 2px solid rgba(141, 141, 141, 0.78);
+    background-color: #FFF;
+    padding: 5px;
+    font-size: 18px;
+    border-radius: 1em;
+}
+
+.form-item input {
+    height: 3em;
+}
+
+.form-item textarea {
+    height: 8em;
+}
+
+.form-item input:hover,
+.form-item textarea:hover {
+    border: 2px solid rgb(68, 68, 68);
+}
+
+.form-item button {
+    font-size: 1.5rem;
+    padding: 0.5em;
+    background: linear-gradient(to left top, rgba(255,255,255,0.2), rgba(255,255,255,0));
+    border-radius: 1em;
+    box-shadow: 0 4px 5px rgba(8, 8, 8, 0.493);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.78);
+    margin: 0.5em;
+}
+
+.form-item button:hover {
+    border: 1px solid rgba(17, 17, 17, 0.78);
+    background: linear-gradient(to left top, rgba(34, 34, 34, 0.527), rgba(158, 156, 156, 0.698));
+    color: white;
+}
+
+.form-item button {
+    width: 100px;
+}
+
+.form-popup h2 {
+    font-size: 2em;
+}
+
+.form-popup p {
+    font-size: 1.5rem;
+}
 
 
 
@@ -306,7 +414,7 @@ li:hover{
         margin-left: 2em;
     }
     
-    header h2 {
+    #suelee-home {
         font-family: 'Praise',cursive;
         font-size: 4.5vw;
         padding: 1.5em 0 1.5em 0.5em;
@@ -422,3 +530,10 @@ li:hover{
     }
 }
 /* END OF DESKTOP MODE */
+
+
+/* PROJECT PAGE */
+.project-title {
+    padding-bottom: 1em;
+}
+
