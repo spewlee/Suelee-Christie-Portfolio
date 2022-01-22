@@ -3,6 +3,8 @@ $(document).ready(function() {
     $(window).scroll(function() {
         if($(window).scrollTop()){
             $("#sticky-id").addClass("white");
+            $("#mobile-nav-container").removeClass("responsive");
+            $("#mobile-nav-container").addClass("hide-container");
         }
         else {
             $("#sticky-id").removeClass("white");
@@ -18,10 +20,13 @@ $(document).ready(function() {
 });
 
 function responsiveNav() {
-    var x = document.getElementById("sticky-id");
-    if (x.className === "sticky") {
+    var x = document.getElementById("mobile-nav-container");
+    x.classList.toggle("hide-container");
+    
+    if (x.className === "mobile-nav-container") {
       x.className += " responsive";
     } else {
-      x.className = "sticky";
+      x.className = "mobile-nav-container hide-container";
+        
     }
   }

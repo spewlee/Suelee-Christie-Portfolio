@@ -22,18 +22,34 @@
             <header>
                 <img class="profile-photo" src="images/SueleeChristie.png" alt="Profile photo of Suelee Christie">
                 <h2>Suelee Christie</h2>
-                <nav>
+                <nav class="desktop-nav">
                     <a href="">About</a>
                     <a href="">Projects</a>
                     <a href="">Contact</a>
                     <a href="https://www.linkedin.com/in/sueleechristie/"><i id="linkedin" class="fa fa-linkedin-square" aria-hidden="true"></i></a>
                     <a href="https://github.com/spewlee"><i id="github" class="fa fa-github" aria-hidden="true"></i></a>
-                    <a href="javascript:void(0);" class="icon" onclick="responsiveNav()">
-                        <i class="fa fa-bars hamburger                                                                                 "></i>
-                      </a>
                 </nav>
+                <div class="hamburger-icon" id="mobile-nav-id">
+                    <a href="javascript:void(0);" class="icon hamburger" onclick="responsiveNav()">
+                        <i class="fa fa-bars hamburger"></i>
+                      </a>
+                </div>
+                
+    
+                    
             </header>
             <div class="wood"></div>
+        </div>
+
+        <div class="mobile-nav-container hide-container" id="mobile-nav-container">
+            <ul class="mobile-menu">
+                <li><a href="">Home</a></li>
+                <li><a href="">About</a></li>
+                <li><a href="">Projects</a></li>
+                <li><a href="">Contact</a></li>
+                <li><a href="https://www.linkedin.com/in/sueleechristie/"><i id="linkedin" class="fa fa-linkedin-square" aria-hidden="true"></i></a></li>
+                <li><a href="https://github.com/spewlee"><i id="github" class="fa fa-github" aria-hidden="true"></i></a></li>
+            </ul>
         </div>
 
         <main>
@@ -75,8 +91,6 @@
                 </section>
             </section>
 
-
-
         </main>
 
         <footer>
@@ -84,12 +98,7 @@
         </footer>
 
 
-
-
     </div>
-
-
-
 
 
 </body>
