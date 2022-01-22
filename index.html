@@ -7,8 +7,7 @@
     <meta name="author" content="Suelee Christie">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="icon" type="image/x-icon" href="images/favicon.ico">
-    <!-- <link rel="stylesheet" href="styles.css"> -->
-    <link rel="stylesheet" href="mobile-first-css.css">
+    <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;900&family=Playfair+Display:ital,wght@0,800;1,400&family=Praise&display=swap" rel="stylesheet">
@@ -18,10 +17,13 @@
 
     <!-- Tablet that displays content on Tablet and Desktop -->
     <div class="tablet" id="tablet">
+
+        <!-- STICKY HEADER -->
         <div class="sticky" id="sticky-id">
             <header>
                 <img class="profile-photo" src="images/SueleeChristie.png" alt="Profile photo of Suelee Christie">
                 <h2>Suelee Christie</h2>
+                <!-- DESKTOP NAV -->
                 <nav class="desktop-nav">
                     <a href="">About</a>
                     <a href="">Projects</a>
@@ -29,18 +31,17 @@
                     <a href="https://www.linkedin.com/in/sueleechristie/"><i id="linkedin" class="fa fa-linkedin-square" aria-hidden="true"></i></a>
                     <a href="https://github.com/spewlee"><i id="github" class="fa fa-github" aria-hidden="true"></i></a>
                 </nav>
+                <!-- MOBILE HAMBURGER ICON -->
                 <div class="hamburger-icon" id="mobile-nav-id">
                     <a href="javascript:void(0);" class="icon hamburger" onclick="responsiveNav()">
                         <i class="fa fa-bars hamburger"></i>
                       </a>
-                </div>
-                
-    
-                    
+                </div>   
             </header>
             <div class="wood"></div>
         </div>
 
+        <!-- MOBILE NAVIGATION -->
         <div class="mobile-nav-container hide-container" id="mobile-nav-container">
             <ul class="mobile-menu">
                 <li><a href="">Home</a></li>
@@ -52,8 +53,9 @@
             </ul>
         </div>
 
+        <!-- MAIN CONTENT -->
         <main>
-            <h1>Welcome to <span class="suelee">Suelee Christie's</span> portfolio!</h1>
+            <h1>Welcome to Suelee Christie's portfolio!</h1>
 
             <section class="first-section">
                 <p>By browsing this website, you will get the opportunity to learn more about me, what I have been learning and some of the projects that I have been completing.I will break the projects up into projects that I have completed independently, as well as projects that have been completed while participating in the She Codes Plus Program.</p>
@@ -62,37 +64,39 @@
                 </section>  
             </section>
 
-            <p>I have been developing skills in:</p>
-            
-            <section class="second-section-container">
-                <section class="card">
-                    <i class="fab fa-python"></i>
-                    <h3>Python</h3>
-                </section>
-                <section class="card">
-                    <i class="fab fa-html5"></i>
-                    <h3>HTML</h3>
-                </section>
-                <section class="card">
-                    <i class="fab fa-css3-alt"></i>
-                    <h3>CSS</h3>
-                </section>
-                <section class="card">
-                    <i class="fab fa-js-square"></i>
-                    <h3>JavaScript</h3>
-                </section>
-                <section class="card">
-                    <i class="fas fa-pencil-alt"></i>
-                    <h3>Graphic Design</h3>
-                </section>
-                <section class="card">
-                    <i class="fas fa-hashtag"></i>
-                    <h3>Social Media</h3>
+            <section class="second-section">
+                <p class="second-section-p">I have been developing skills in:</p>
+                <section class="card-container">
+                    <section class="card">
+                        <i class="fab fa-python"></i>
+                        <h3>Python</h3>
+                    </section>
+                    <section class="card">
+                        <i class="fab fa-html5"></i>
+                        <h3>HTML</h3>
+                    </section>
+                    <section class="card">
+                        <i class="fab fa-css3-alt"></i>
+                        <h3>CSS</h3>
+                    </section>
+                    <section class="card">
+                        <i class="fab fa-js-square"></i>
+                        <h3>JavaScript</h3>
+                    </section>
+                    <section class="card">
+                        <i class="fas fa-pencil-alt"></i>
+                        <h3>Graphic Design</h3>
+                    </section>
+                    <section class="card">
+                        <i class="fas fa-hashtag"></i>
+                        <h3>Social Media</h3>
+                    </section>
                 </section>
             </section>
 
         </main>
 
+        <!-- FOOTER -->
         <footer>
             <p>© Copyright Suelee Christie 2022</p>
         </footer>
