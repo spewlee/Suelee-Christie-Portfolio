@@ -47,4 +47,8 @@ function responsiveNav() {
     }  else {
         form.className = "form-popup";
     }  
-  }   
+  }  
+  
+  const swup = new Swup()
+
+  

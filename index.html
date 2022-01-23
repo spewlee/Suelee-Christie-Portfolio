@@ -15,18 +15,21 @@
 
 <body>
 
+    <!-- Loading GIF while webpage is loading -->
+    <div id="preloader"></div>
+
     <!-- Tablet that displays content on Tablet and Desktop -->
-    <div class="tablet" id="tablet">
+    <div class="tablet tilt-on" id="tablet">
 
         <!-- STICKY HEADER -->
         <div class="sticky" id="sticky-id">
             <header>
                 <img class="profile-photo" src="images/SueleeChristie.png" alt="Profile photo of Suelee Christie">
-                <a href="index.html" class="suelee-home" id="suelee-home">Suelee Christie</a>
+                <a href="/index.html" class="suelee-home" id="suelee-home">Suelee Christie</a>
                 <!-- DESKTOP NAV -->
                 <nav class="desktop-nav">
-                    <a href="about.html">About</a>
-                    <a href="projects.html">Projects</a>
+                    <a href="/about.html">About</a>
+                    <a href="/projects.html">Projects</a>
                     <a href="javascript:void(0);" class="contact-link" onclick="openForm()">Contact</a>
                     <a href="https://www.linkedin.com/in/sueleechristie/"><i id="linkedin" class="fa fa-linkedin-square" aria-hidden="true"></i></a>
                     <a href="https://github.com/spewlee"><i id="github" class="fa fa-github" aria-hidden="true"></i></a>
@@ -44,9 +47,9 @@
         <!-- MOBILE NAVIGATION -->
         <div class="mobile-nav-container hide-container" id="mobile-nav-container">
             <ul class="mobile-menu">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="projects.html">Projects</a></li>
+                <li><a href="/index.html">Home</a></li>
+                <li><a href="/about.html">About</a></li>
+                <li><a href="/projects.html">Projects</a></li>
                 <li><a href="javascript:void(0);" class="contact-link" onclick="openForm()">Contact</a></li>
                 <li><a href="https://www.linkedin.com/in/sueleechristie/"><i id="linkedin" class="fa fa-linkedin-square" aria-hidden="true"></i></a></li>
                 <li><a href="https://github.com/spewlee"><i id="github" class="fa fa-github" aria-hidden="true"></i></a></li>
@@ -54,7 +57,7 @@
         </div>
 
         <!-- MAIN CONTENT -->
-        <main>
+        <main id="swup" class="transition-fade">
 
 
             <!-- POPUP FORM -->
@@ -148,6 +151,15 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <!-- Tilt.js Script -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/tilt.js/1.2.1/tilt.jquery.min.js"></script>
+<!-- Swup Script -->
+<script src="https://unpkg.com/swup@latest/dist/swup.min.js"></script>  
 <!-- My JavaScript file -->
 <script src="script.js"></script>
+<!-- Script to remove the "Preloader" once the page has loaded -->
+<script type="text/javascript">
+setTimeout(function() {
+    $("#preloader").fadeToggle();
+}, 2000);
+</script>
+
 </html>
