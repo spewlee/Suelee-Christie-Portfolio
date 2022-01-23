@@ -266,25 +266,29 @@ li:hover{
 }
 
 form {
-    margin: 1em;
-    width: 100%;
+    padding: 3em;
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .form-item {
+    padding: 0.5em;
+    margin-bottom: 0.5em;;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 1em;
+    flex-direction: column;
+    width: 100%;
 }
 
 .form-item label {
-    flex-basis: 25%;
+    margin-bottom: 0.3em;;
     font-size: 1.5em;
 }
 
 .form-item input,
 .form-item textarea {
-    flex-basis: 50%;
     border: 2px solid rgba(141, 141, 141, 0.78);
     background-color: #FFF;
     padding: 5px;
@@ -297,7 +301,7 @@ form {
 }
 
 .form-item textarea {
-    height: 8em;
+    height: 4em;
 }
 
 .form-item input:hover,
@@ -307,13 +311,17 @@ form {
 
 .form-item button {
     font-size: 1.5rem;
-    padding: 0.5em;
     background: linear-gradient(to left top, rgba(255,255,255,0.2), rgba(255,255,255,0));
     border-radius: 1em;
     box-shadow: 0 4px 5px rgba(8, 8, 8, 0.493);
     backdrop-filter: blur(10px);
     border: 1px solid rgba(255, 255, 255, 0.78);
-    margin: 0.5em;
+    margin-top: 0.5em;
+    margin-bottom: 0.2em;
+    padding: 0.5em 0.5em;
+    text-align: center;
+    font-weight: bolder;
+    margin: auto;
 }
 
 .form-item button:hover {
@@ -350,6 +358,65 @@ html.is-animating .transition-fade {
     transform: inherit !important;
 }
 /* END OF DISABLE TILT.JS */
+
+/* Project Page */
+.project.container {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    padding: 0.3em;
+}
+
+.project-pic img {
+    border-radius: 1em;
+    height: auto;
+    width: 75vw;
+}
+
+.project {
+    margin: 2em 0 2em 0;
+}
+
+.project h3 {
+    font-size: 2em;
+    margin: 1em 0 0.5em 0;
+}
+/* END OF PROJECT PAGE */
+
+/* ABOUT PAGE */
+.about.container {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    padding: 0.3em;
+}
+
+.about-pic img {
+    border-radius: 1em;
+    height: auto;
+    width: 75vw;
+}
+
+.suelee img {
+    width: 55vw;
+    height: auto;
+    border-radius: 50%;
+}
+
+.about {
+    margin: 2em 0 2em 0;
+}
+
+.about p {
+    margin: 1em 0 0.5em 0;
+}
+/* ABOUT PAGE STYLING */
+
+
+/* END OF ABOUT PAGE STYLING */
+
 
 
 
@@ -554,12 +621,65 @@ html.is-animating .transition-fade {
         grid-template-rows: 3 / span 1;
         height:100%;
     }
+
+    /* PROJECT PAGE */
+    .project-container {
+        display: flex;
+        flex-direction: column;
+        padding: 1em;
+        margin: 1em auto;
+    }
+
+    .project {
+        display: flex;
+        margin: 1em 0 1.5em 0;
+    }
+
+    .project-pic {
+        display: flex;
+    }
+
+    .project-pic img {
+        height: 30vh;
+        width: auto;
+    }
+    
+    .project:nth-child(even) {
+        flex-direction: row-reverse;
+    }
+    /* END OF PROJECT PAGE */
+
+
+        /* about PAGE */
+        .about-container {
+            display: flex;
+            flex-direction: column;
+            padding: 2.5em;
+            margin: 1em auto;
+        }
+    
+        .about {
+            display: flex;
+            margin: 1em 0 1.5em 0;
+        }
+    
+        .about-pic {
+            display: flex;
+        }
+    
+        .about-pic img {
+            height: 30vh;
+            width: auto;
+        }
+        
+        .about:nth-child(even) {
+            flex-direction: row-reverse;
+        }
+        /* END OF ABOUT PAGE */
+
+
+
 }
 /* END OF DESKTOP MODE */
 
-
-/* PROJECT PAGE */
-.project-title {
-    padding-bottom: 1em;
-}
 
