@@ -345,6 +345,13 @@ html.is-animating .transition-fade {
 }
 /* END OF SWUP TRANSITIONS */
 
+/*TO DISABLE TILT.JS */
+.hide-tilt {
+    transform: inherit !important;
+}
+/* END OF DISABLE TILT.JS */
+
+
 
 
 /* DESKTOP MODE with "Tablet" on screen */
